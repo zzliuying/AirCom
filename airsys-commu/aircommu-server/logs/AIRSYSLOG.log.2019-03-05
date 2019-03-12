@@ -1,0 +1,5 @@
+2019-03-05 14:49:41 [Thread-0:0] - [WARN] WEBServer starting...
+2019-03-05 14:49:49 [pool-3-thread-1:8275] - [INFO] WebServerSimple connect one!
+2019-03-05 14:49:50 [pool-3-thread-1:8347] - [WARN] WebServerSimple.Handler.run()------------close one WEBsocket!111111111111
+2019-03-05 15:01:23 [pool-3-thread-2:702223] - [INFO] WebServerSimple connect one!
+2019-03-05 15:01:23 [pool-3-thread-2:702224] - [WARN] WebServerSimple.Handler.run()------------close one WEBsocket!111111111111

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_vBU9APwoEei7s9jF8gPxkA">
+  <name xsi:nil="true"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_vEPHEPwoEei7s9jF8gPxkA" name="app">
+    <packagedElement xmi:type="uml:Package" xmi:id="_vEcicPwoEei7s9jF8gPxkA" name="center">
+      <packagedElement xmi:type="uml:Package" xmi:id="_vEdJgPwoEei7s9jF8gPxkA" name="func">
+        <packagedElement xmi:type="uml:Package" xmi:id="_vEdJgfwoEei7s9jF8gPxkA" name="slave">
+          <packagedElement xmi:type="uml:Class" xmi:id="_vElFUPwoEei7s9jF8gPxkA" name="CenterRecvProcessor">
+            <generalization xmi:id="_vGjbQPwoEei7s9jF8gPxkA" general="_vEuPQPwoEei7s9jF8gPxkA"/>
+            <ownedAttribute xmi:id="_vGqwAPwoEei7s9jF8gPxkA" name="regHandler" visibility="package" type="_vEsaEPwoEei7s9jF8gPxkA" association="_vH10sPwoEei7s9jF8gPxkA"/>
+            <ownedAttribute xmi:id="_vGr-IPwoEei7s9jF8gPxkA" name="localInfo" visibility="package" type="_vGUxwPwoEei7s9jF8gPxkA"/>
+            <ownedOperation xmi:id="_vGz58PwoEei7s9jF8gPxkA" name="process" visibility="public">
+              <ownedParameter xmi:id="_vGz58fwoEei7s9jF8gPxkA" name="in" type="_vGUxw_woEei7s9jF8gPxkA"/>
+              <ownedParameter xmi:id="_vGz58vwoEei7s9jF8gPxkA" name="out" type="_vGUxw_woEei7s9jF8gPxkA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_vEsaEPwoEei7s9jF8gPxkA" name="RegistHandler">
+            <generalization xmi:id="_vG1IEPwoEei7s9jF8gPxkA" general="_vEtoMPwoEei7s9jF8gPxkA"/>
+            <ownedAttribute xmi:id="_vG1vIPwoEei7s9jF8gPxkA" name="localInfo" visibility="private" type="_vGUxwPwoEei7s9jF8gPxkA"/>
+            <ownedAttribute xmi:id="_vG3kUPwoEei7s9jF8gPxkA" name="logger" visibility="public" isStatic="true" type="_vGUxx_woEei7s9jF8gPxkA"/>
+            <ownedOperation xmi:id="_vG4ycPwoEei7s9jF8gPxkA" name="handle" visibility="public">
+              <ownedParameter xmi:id="_vG4ycfwoEei7s9jF8gPxkA" name="in" type="_vGUxw_woEei7s9jF8gPxkA"/>
+              <ownedParameter xmi:id="_vG4ycvwoEei7s9jF8gPxkA" name="out" type="_vGUxw_woEei7s9jF8gPxkA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_vEtoMPwoEei7s9jF8gPxkA" name="CommandHandler">
+            <ownedOperation xmi:id="_vG5ZgPwoEei7s9jF8gPxkA" name="handle" visibility="public">
+              <ownedParameter xmi:id="_vG5ZgfwoEei7s9jF8gPxkA" name="in" type="_vGUxw_woEei7s9jF8gPxkA"/>
+              <ownedParameter xmi:id="_vG5ZgvwoEei7s9jF8gPxkA" name="out" type="_vGUxw_woEei7s9jF8gPxkA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_vEuPQPwoEei7s9jF8gPxkA" name="RecvProcessor">
+            <ownedAttribute xmi:id="_vG6noPwoEei7s9jF8gPxkA" name="cBase" visibility="protected" type="_vGVY0PwoEei7s9jF8gPxkA"/>
+            <ownedOperation xmi:id="_vG7OsPwoEei7s9jF8gPxkA" name="process" visibility="protected">
+              <ownedParameter xmi:id="_vG7OsfwoEei7s9jF8gPxkA" name="in" type="_vGUxw_woEei7s9jF8gPxkA"/>
+              <ownedParameter xmi:id="_vG7OsvwoEei7s9jF8gPxkA" name="out" type="_vGUxw_woEei7s9jF8gPxkA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_vH10sPwoEei7s9jF8gPxkA" memberEnd="_vGqwAPwoEei7s9jF8gPxkA _vH10sfwoEei7s9jF8gPxkA">
+            <ownedEnd xmi:id="_vH10sfwoEei7s9jF8gPxkA" name="CenterRecvProcessor" type="_vElFUPwoEei7s9jF8gPxkA" association="_vH10sPwoEei7s9jF8gPxkA"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vGSVgPwoEei7s9jF8gPxkA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_vGUxwPwoEei7s9jF8gPxkA" name="LocalInfo"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_vGVY0PwoEei7s9jF8gPxkA" name="HJT212Communicate"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_vGUxwfwoEei7s9jF8gPxkA" name="core">
+    <packagedElement xmi:type="uml:Package" xmi:id="_vGUxwvwoEei7s9jF8gPxkA" name="structure">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_vGUxw_woEei7s9jF8gPxkA" name="DataPackage"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_vGUxxPwoEei7s9jF8gPxkA" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_vGUxxfwoEei7s9jF8gPxkA" name="apache">
+      <packagedElement xmi:type="uml:Package" xmi:id="_vGUxxvwoEei7s9jF8gPxkA" name="log4j">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_vGUxx_woEei7s9jF8gPxkA" name="Logger"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

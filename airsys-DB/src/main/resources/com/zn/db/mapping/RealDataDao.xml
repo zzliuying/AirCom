@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zn.db.dao.RealDataDao">  
+<select id="getRealData" parameterType="com.zn.db.entity.RealData" resultType="com.zn.db.entity.RealData">  
+    SELECT * FROM real_data WHERE MN=#{MN}  
+</select>  
+<insert id="addRealData" parameterType="com.zn.db.entity.RealData" flushCache="true">  
+   INSERT INTO real_data (ID,time,site_name,site_num,MN,longtitude,latitude,AQIindex,AQIlevel,SO2,SO2_flag,
+   atm_pressure,atm_pressure_flag,wind_direction,wind_direction_flag,wind_speed,wind_speed_flag,NO2,NO2_flag,
+   temperature,temperature_flag,TVOC,TVOC_flag,PM25,PM25_flag,PM10,PM10_flag,CO,CO_flag,O3,O3_flag,moisture,moistrue_flag)
+    VALUES (#{ID},#{time},#{site_name},#{site_num},#{MN},#{longtitude},#{latitude},#{AQIindex},#{AQIlevel},#{SO2},#{SO2_flag},
+    #{atm_pressure},#{atm_pressure_flag},#{wind_direction},#{wind_direction_flag},#{wind_speed},#{wind_speed_flag},#{NO2},#{NO2_flag},
+    #{temperature},#{temperature_flag},#{TVOC},#{TVOC_flag},#{PM25},#{PM25_flag},#{PM10},#{PM10_flag},#{CO},#{CO_flag},#{O3},#{O3_flag},
+    #{moisture},#{moistrue_flag})  
+</insert>  
+<update id="updateRealData" parameterType="com.zn.db.entity.RealData">  
+    UPDATE real_data SET longtitude=#{longtitude} WHERE MN=#{MN}  
+</update>  
+<delete id="deleteRealData" parameterType="int">  
+    DELETE FROM real_data WHERE id=#{id}  
+</delete>  
+</mapper>

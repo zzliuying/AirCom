@@ -1,0 +1,8 @@
+core\structure\DataPackageTest.class
+core\structure\DataSegmentTest.class
+app\util\HJT212FormatValidatorTest.class
+core\structure\CommandParaTest.class
+core\structure\DataZoneTest.class
+core\structure\util\CRC16HelperTest.class
+core\structure\item\ComplexItemTest.class
+core\structure\item\SimpleItemTest.class

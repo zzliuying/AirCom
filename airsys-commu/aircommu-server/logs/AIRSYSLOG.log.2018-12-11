@@ -1,0 +1,9 @@
+2018-12-11 11:09:09 [Thread-0:0] - [WARN] WEBServer starting...
+2018-12-11 11:19:21 [Thread-0:0] - [ERROR] server error:Address already in use: JVM_Bind
+2018-12-11 11:20:48 [Thread-0:0] - [WARN] WEBServer starting...
+2018-12-11 11:23:29 [Thread-0:0] - [WARN] WEBServer starting...
+2018-12-11 11:23:52 [pool-3-thread-1:22955] - [INFO] WebServerSimple connect one!
+2018-12-11 11:23:52 [pool-3-thread-1:22960] - [WARN] WebServerSimple.Handler.run()------------close one WEBsocket!111111111111
+2018-12-11 11:24:13 [pool-3-thread-2:43932] - [INFO] WebServerSimple connect one!
+2018-12-11 11:24:13 [pool-3-thread-2:43933] - [WARN] WebServerSimple.Handler.run()------------close one WEBsocket!111111111111
+2018-12-11 11:32:48 [Thread-0:0] - [ERROR] server error:Address already in use: JVM_Bind

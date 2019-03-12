@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_7LXwAPeeEeiN3-3e26eftA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_7NZwUPeeEeiN3-3e26eftA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_7NcMkPeeEeiN3-3e26eftA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_7N1OIPeeEeiN3-3e26eftA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7LYXEPeeEeiN3-3e26eftA" name="core">
+    <packagedElement xmi:type="uml:Package" xmi:id="_7LYXEfeeEeiN3-3e26eftA" name="interact">
+      <packagedElement xmi:type="uml:Package" xmi:id="_7LY-IPeeEeiN3-3e26eftA" name="center">
+        <packagedElement xmi:type="uml:Class" xmi:id="_7LY-IfeeEeiN3-3e26eftA" name="LoadingProcessorCenter">
+          <generalization xmi:id="_7MslsPeeEeiN3-3e26eftA" general="_7LaMQPeeEeiN3-3e26eftA"/>
+          <ownedOperation xmi:id="_7NaXYPeeEeiN3-3e26eftA" name="execute" visibility="public">
+            <ownedParameter xmi:id="_7NaXYfeeEeiN3-3e26eftA" name="para">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7NblgPeeEeiN3-3e26eftA" name="handle" visibility="public">
+            <ownedParameter xmi:id="_7NblgfeeEeiN3-3e26eftA" name="resp" type="_7MqwgveeEeiN3-3e26eftA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7NcMkfeeEeiN3-3e26eftA" name="handleResponseData" visibility="protected">
+            <ownedParameter xmi:id="_7NcMkveeEeiN3-3e26eftA" name="pck" type="_7MqwgveeEeiN3-3e26eftA"/>
+            <ownedParameter xmi:id="_7NcMk_eeEeiN3-3e26eftA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7NdasPeeEeiN3-3e26eftA" name="handleData" visibility="public">
+            <ownedParameter xmi:id="_7NdasfeeEeiN3-3e26eftA" name="resp" type="_7MqwgveeEeiN3-3e26eftA"/>
+            <ownedParameter xmi:id="_7NdasveeEeiN3-3e26eftA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7LaMQPeeEeiN3-3e26eftA" name="ProcessorCenter">
+          <generalization xmi:id="_7NeBwPeeEeiN3-3e26eftA" general="_7Mqwh_eeEeiN3-3e26eftA"/>
+          <ownedAttribute xmi:id="_7NfP4PeeEeiN3-3e26eftA" name="replyCN" visibility="protected" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_7NfP4feeEeiN3-3e26eftA" value="9011"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_7NiTMPeeEeiN3-3e26eftA" name="exeRtnCN" visibility="protected" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_7NiTMfeeEeiN3-3e26eftA" value="9012"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_7NlWgPeeEeiN3-3e26eftA" name="notifyCN" visibility="protected" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_7NlWgfeeEeiN3-3e26eftA" value="9013"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_7NnywPeeEeiN3-3e26eftA" name="dataCN" visibility="protected" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_7NnywfeeEeiN3-3e26eftA" value="9014"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_7NqPAPeeEeiN3-3e26eftA" name="curCN" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_7NqPAfeeEeiN3-3e26eftA" value=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_7NsrQPeeEeiN3-3e26eftA" name="curState" visibility="protected" type="_7LcBcPeeEeiN3-3e26eftA"/>
+          <ownedAttribute xmi:id="_7NvHgPeeEeiN3-3e26eftA" name="reqFactory" visibility="public" type="_7MqwgPeeEeiN3-3e26eftA"/>
+          <ownedAttribute xmi:id="_7NxjwPeeEeiN3-3e26eftA" name="cResponse" visibility="public" type="_7MqwhveeEeiN3-3e26eftA"/>
+          <ownedAttribute xmi:id="_7N0AAPeeEeiN3-3e26eftA" name="timeoutFlag" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_7N3DUPeeEeiN3-3e26eftA" name="repeatcount" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_7N3DUfeeEeiN3-3e26eftA"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_7LcBcPeeEeiN3-3e26eftA" name="STATE" visibility="protected">
+            <ownedLiteral xmi:id="_7OIJEPeeEeiN3-3e26eftA" name="REPLY"/>
+            <ownedLiteral xmi:id="_7OIJEfeeEeiN3-3e26eftA" name="RESPONSE"/>
+            <ownedLiteral xmi:id="_7OIwIPeeEeiN3-3e26eftA" name="RESULT"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_7LedsPeeEeiN3-3e26eftA" name="TimeoutTimerTask">
+            <generalization xmi:id="_7OIwIfeeEeiN3-3e26eftA" general="_7MqwhfeeEeiN3-3e26eftA"/>
+            <ownedAttribute xmi:id="_7OJ-QPeeEeiN3-3e26eftA" name="timer" visibility="public" type="_7MqwhPeeEeiN3-3e26eftA"/>
+            <ownedOperation xmi:id="_7OKlUPeeEeiN3-3e26eftA" name="run" visibility="public"/>
+          </nestedClassifier>
+          <ownedOperation xmi:id="_7N4RcPeeEeiN3-3e26eftA" name="setCurCN" visibility="public">
+            <ownedParameter xmi:id="_7N4RcfeeEeiN3-3e26eftA" name="cn">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7N6GoPeeEeiN3-3e26eftA" name="execute" visibility="public">
+            <ownedParameter xmi:id="_7N6GofeeEeiN3-3e26eftA" name="para">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7N7UwPeeEeiN3-3e26eftA" name="handle" visibility="public">
+            <ownedParameter xmi:id="_7N7UwfeeEeiN3-3e26eftA" name="resp" type="_7MqwgveeEeiN3-3e26eftA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7N8i4PeeEeiN3-3e26eftA" name="endHandleToResp" visibility="public">
+            <ownedParameter xmi:id="_7N8i4feeEeiN3-3e26eftA" name="retType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7N-YEPeeEeiN3-3e26eftA" name="setCurState" visibility="public">
+            <ownedParameter xmi:id="_7N-YEfeeEeiN3-3e26eftA" name="state" type="_7LcBcPeeEeiN3-3e26eftA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7N_mMPeeEeiN3-3e26eftA" name="sendData" visibility="public">
+            <ownedParameter xmi:id="_7N_mMfeeEeiN3-3e26eftA" name="para">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7OA0UPeeEeiN3-3e26eftA" name="attach" visibility="public"/>
+          <ownedOperation xmi:id="_7OCCcPeeEeiN3-3e26eftA" name="detach" visibility="public"/>
+          <ownedOperation xmi:id="_7ODQkPeeEeiN3-3e26eftA" name="addResponse" visibility="public">
+            <ownedParameter xmi:id="_7ODQkfeeEeiN3-3e26eftA" name="resp" type="_7MqwhveeEeiN3-3e26eftA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7OEesPeeEeiN3-3e26eftA" name="handleReply" visibility="protected">
+            <ownedParameter xmi:id="_7OEesfeeEeiN3-3e26eftA" name="pck" type="_7MqwgveeEeiN3-3e26eftA"/>
+            <ownedParameter xmi:id="_7OEesveeEeiN3-3e26eftA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7OFs0PeeEeiN3-3e26eftA" name="handleResponseData" visibility="protected">
+            <ownedParameter xmi:id="_7OFs0feeEeiN3-3e26eftA" name="pck" type="_7MqwgveeEeiN3-3e26eftA"/>
+            <ownedParameter xmi:id="_7OFs0veeEeiN3-3e26eftA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7OG68PeeEeiN3-3e26eftA" name="handleExeResult" visibility="protected">
+            <ownedParameter xmi:id="_7OG68feeEeiN3-3e26eftA" name="pck" type="_7MqwgveeEeiN3-3e26eftA"/>
+            <ownedParameter xmi:id="_7OG68veeEeiN3-3e26eftA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7Lfr0PeeEeiN3-3e26eftA" name="SettingProcessorCenter">
+          <generalization xmi:id="_7OLzcPeeEeiN3-3e26eftA" general="_7LaMQPeeEeiN3-3e26eftA"/>
+          <ownedOperation xmi:id="_7OMagPeeEeiN3-3e26eftA" name="sendData" visibility="public">
+            <ownedParameter xmi:id="_7OMagfeeEeiN3-3e26eftA" name="para">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7ONBkPeeEeiN3-3e26eftA" name="handle" visibility="public">
+            <ownedParameter xmi:id="_7ONBkfeeEeiN3-3e26eftA" name="resp" type="_7MqwgveeEeiN3-3e26eftA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7Lg58PeeEeiN3-3e26eftA" name="GettingProcessorCenter">
+          <generalization xmi:id="_7ONooPeeEeiN3-3e26eftA" general="_7LaMQPeeEeiN3-3e26eftA"/>
+          <ownedOperation xmi:id="_7ONoofeeEeiN3-3e26eftA" name="sendData" visibility="public">
+            <ownedParameter xmi:id="_7ONooveeEeiN3-3e26eftA" name="para">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7OOPsPeeEeiN3-3e26eftA" name="handleResponseData" visibility="protected">
+            <ownedParameter xmi:id="_7OOPsfeeEeiN3-3e26eftA" name="pck" type="_7MqwgveeEeiN3-3e26eftA"/>
+            <ownedParameter xmi:id="_7OOPsveeEeiN3-3e26eftA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7LhhAPeeEeiN3-3e26eftA" name="NotifyProcessorCenter">
+          <generalization xmi:id="_7OO2wPeeEeiN3-3e26eftA" general="_7LaMQPeeEeiN3-3e26eftA"/>
+          <ownedOperation xmi:id="_7OO2wfeeEeiN3-3e26eftA" name="sendData" visibility="public">
+            <ownedParameter xmi:id="_7OO2wveeEeiN3-3e26eftA" name="para">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7OPd0PeeEeiN3-3e26eftA" name="handle" visibility="public">
+            <ownedParameter xmi:id="_7OPd0feeEeiN3-3e26eftA" name="resp" type="_7MqwgveeEeiN3-3e26eftA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_7OQE4PeeEeiN3-3e26eftA" name="handleReply" visibility="protected">
+            <ownedParameter xmi:id="_7OQr8PeeEeiN3-3e26eftA" name="pck" type="_7MqwgveeEeiN3-3e26eftA"/>
+            <ownedParameter xmi:id="_7OQr8feeEeiN3-3e26eftA" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7Mqwh_eeEeiN3-3e26eftA" name="Processor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7MqwgfeeEeiN3-3e26eftA" name="structure">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MqwgveeEeiN3-3e26eftA" name="DataPackage"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MqwiPeeEeiN3-3e26eftA" name="CommandPara"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_7MrXkPeeEeiN3-3e26eftA" name="item">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_7MrXkfeeEeiN3-3e26eftA" name="SimpleItem"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MrXk_eeEeiN3-3e26eftA" name="DataZone"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7MqJcPeeEeiN3-3e26eftA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_7MqJcfeeEeiN3-3e26eftA" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MqJcveeEeiN3-3e26eftA" name="UnsupportedEncodingException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MrXkveeEeiN3-3e26eftA" name="IOException"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7Mqwg_eeEeiN3-3e26eftA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MqwhPeeEeiN3-3e26eftA" name="Timer"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MqwhfeeEeiN3-3e26eftA" name="TimerTask"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7MrXlPeeEeiN3-3e26eftA" name="net">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MrXlfeeEeiN3-3e26eftA" name="SocketException"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7MqJc_eeEeiN3-3e26eftA" name="app">
+    <packagedElement xmi:type="uml:Package" xmi:id="_7MqJdPeeEeiN3-3e26eftA" name="center">
+      <packagedElement xmi:type="uml:Package" xmi:id="_7MqJdfeeEeiN3-3e26eftA" name="custom">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_7MqJdveeEeiN3-3e26eftA" name="HJT212LocalProxy"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_7MqwhveeEeiN3-3e26eftA" name="CustomResponse"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7MqJd_eeEeiN3-3e26eftA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MqJePeeEeiN3-3e26eftA" name="HJT212Communicate"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7MqwgPeeEeiN3-3e26eftA" name="RequestFactory"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
